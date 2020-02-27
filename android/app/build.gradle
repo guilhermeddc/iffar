@@ -13,12 +13,12 @@ if (flutterRoot == null) {
 
 def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
 if (flutterVersionCode == null) {
-    flutterVersionCode = '2'
+    flutterVersionCode = '3'
 }
 
 def flutterVersionName = localProperties.getProperty('flutter.versionName')
 if (flutterVersionName == null) {
-    flutterVersionName = '1.0'
+    flutterVersionName = '1.3'
 }
 
 apply plugin: 'com.android.application'
@@ -43,7 +43,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "br.com.iffar.caenarede"
+        applicationId "br.com.iffar.cae_na_rede"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode flutterVersionCode.toInteger()
@@ -53,9 +53,9 @@ android {
 
     signingConfigs {
         release {
-            keyAlias 'key_iffar'
+            keyAlias 'ddc'
             keyPassword '29gu09il'
-            storeFile file('./GooglePlay/iffar_keystore.ks.jks')
+            storeFile file('./GooglePlay/ddc.ks.jks')
             storePassword '29gu09il'
         }
     }
