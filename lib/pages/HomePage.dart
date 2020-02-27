@@ -10,8 +10,11 @@ import 'package:iffar/pages/Records/Records.dart';
 import 'package:iffar/pages/Regulation/Regulation.dart';
 import 'package:iffar/pages/System/System.dart';
 import 'package:iffar/widgets/IntroButton.dart';
+import 'package:iffar/widgets/DrawerWidget.dart';
 import 'package:iffar/widgets/TitleScreen.dart';
 import 'package:iffar/pages/UsefulLinks/UsefulLinks.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 
 class HomePage extends StatefulWidget {
   @override
@@ -19,6 +22,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final url = 'https://forms.gle/LM5GEr7ERmsezKbPA';
+
   @override
   Widget build(BuildContext context) {
     MediaQueryData mediaQuery = MediaQuery.of(context);
@@ -28,13 +33,26 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('CAE na rede'),
+        actions: <Widget>[
+          IconButton(
+            alignment: Alignment.center,
+            icon: Icon(Icons.thumbs_up_down), onPressed: () async {
+            if (await canLaunch(url)) {
+              await launch(url);
+            } else {
+              throw 'Could not launch $url';
+            }
+          },
+          ),
+        ],
       ),
+      drawer: DrawerWidget(),
       body: ListView(
         children: <Widget>[
           Container(
             padding: EdgeInsets.only(
-              right: size.width / 10,
-              left: size.width / 10,
+              right: size.width / 15,
+              left: size.width / 15,
               top: size.height / 20,
             ),
             color: Colors.white,
@@ -46,21 +64,21 @@ class _HomePageState extends State<HomePage> {
                     children: <Widget>[
                       IntroButton(
                         Colors.red,
-                        Icons.assignment_turned_in,
-                        'Programas',
-                        100,
-                        ProgramPage(),
-                      ),
-                      IntroButton(
-                        Colors.green,
                         Icons.account_balance,
                         'Conhecendo IFFar',
-                        10,
+                        100,
                         KnowingPage(),
                       ),
                       IntroButton(
                         Colors.green,
-                        Icons.gavel,
+                        Icons.assignment_turned_in,
+                        'Programas',
+                        10,
+                        ProgramPage(),
+                      ),
+                      IntroButton(
+                        Colors.green,
+                        Icons.border_color,
                         "Regulamentos",
                         10,
                         Regulation(),
@@ -75,7 +93,7 @@ class _HomePageState extends State<HomePage> {
                     children: <Widget>[
                       IntroButton(
                         Colors.green,
-                        Icons.poll,
+                        Icons.fingerprint,
                         "Políticas",
                         10,
                         Politics(),
@@ -102,7 +120,7 @@ class _HomePageState extends State<HomePage> {
                     children: <Widget>[
                       IntroButton(
                         Colors.green,
-                        Icons.sync,
+                        Icons.group_add,
                         "Permanência e Êxito",
                         10,
                         ProgramDPE(),
@@ -116,7 +134,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       IntroButton(
                         Colors.green,
-                        Icons.border_color,
+                        Icons.school,
                         "Registro Acadêmico",
                         10,
                         Records(),

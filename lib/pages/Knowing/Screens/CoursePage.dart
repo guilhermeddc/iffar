@@ -82,7 +82,7 @@ class CoursePage extends StatelessWidget {
         ),
       ),
       floatingActionButton: LinkButton(
-        'https://www.iffarropilha.edu.br/projeto-pedag%c3%b3gico-de-curso/campus-são-vicente-do-sul'
+        'https://www.iffarroupilha.edu.br/campus-são-vicente-do-sul'
       ),
     );
   }

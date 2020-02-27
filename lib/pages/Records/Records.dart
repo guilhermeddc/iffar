@@ -22,7 +22,7 @@ class Records extends StatelessWidget {
                 color: Colors.green,
               ),
               TitleList(
-                  "       A Coordenção de Registros Acadêmicos (CRA) operacionaliza todas as atividades ligadas à vida acadêmica do estudante, desde seu ingresso até sua conclusão do curso."),
+                  "       A Coordenação de Registros Acadêmicos (CRA) operacionaliza todas as atividades ligadas à vida acadêmica do estudante, desde seu ingresso até sua conclusão do curso."),
             ],
           ),
         ),

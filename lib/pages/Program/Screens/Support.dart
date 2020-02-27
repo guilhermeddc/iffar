@@ -1,5 +1,6 @@
 import 'package:iffar/widgets/ImageScreen.dart';
 import 'package:iffar/widgets/ItemList.dart';
+import 'package:iffar/widgets/LinkButton.dart';
 import 'package:iffar/widgets/TitleList.dart';
 import 'package:iffar/widgets/TitleScreen.dart';
 import 'package:flutter/material.dart';
@@ -70,6 +71,10 @@ class _SupportState extends State<Support> {
         floatingActionButton: Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
+            LinkButton("https://www.iffarroupilha.edu.br/assist%C3%AAncia-estudantil/apresentacao-ae"),
+            SizedBox(
+              width: 20,
+            ),
             FloatingActionButton(
               heroTag: 'btn1',
               child: Icon(Icons.book),

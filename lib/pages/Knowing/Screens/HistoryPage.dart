@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iffar/widgets/CardScreen.dart';
+import 'package:iffar/widgets/ImageScreen.dart';
 import 'package:iffar/widgets/TextHistory.dart';
 
 class HistoryPage extends StatelessWidget {
@@ -79,10 +80,13 @@ class HistoryPage extends StatelessWidget {
             TextHistory(paragrafo02),
             TextHistory(paragrafo03),
             TextHistory(paragrafo04),
+            ImageScreen('anx01.jpg'),
             TextHistory(paragrafo05),
             TextHistory(paragrafo06),
+            ImageScreen('logo.png'),
             TextHistory(paragrafo07),
             TextHistory(paragrafo08),
+            ImageScreen('anx02.png'),
           ],
         ),
       ),

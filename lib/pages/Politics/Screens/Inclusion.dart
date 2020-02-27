@@ -67,7 +67,7 @@ class _InclusionState extends State<Inclusion> {
         floatingActionButton: Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
-            LinkButton(""),
+            LinkButton("https://www.iffarroupilha.edu.br/assist%C3%AAncia-estudantil/apresentacao-ae"),
             SizedBox(
               width: 20,
             ),

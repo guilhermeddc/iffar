@@ -32,7 +32,7 @@ class _ConcessionState extends State<Concession> {
                       ? ListView(
                           children: <Widget>[
                             TitleScreen(
-                                "Concessão de apoio financeiro aos estudantes do IFFar para participacão de eventos",
+                                "Concessão de apoio financeiro aos estudantes do IFFar para participacão em eventos",
                                 22.0),
                             ImageScreen("concessao.jpg"),
                             TitleList(
@@ -73,7 +73,7 @@ class _ConcessionState extends State<Concession> {
         floatingActionButton: Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
-            LinkButton(""),
+            LinkButton("https://www.iffarroupilha.edu.br/assist%C3%AAncia-estudantil/apresentacao-ae"),
             SizedBox(
               width: 20,
             ),

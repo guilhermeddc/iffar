@@ -26,10 +26,8 @@ class _CheersState extends State<Cheers> {
                 child: _isInit
                     ? ListView(
                         children: <Widget>[
-                          TitleScreen("Atenção à saúde", 30),
+                          TitleScreen("Atenção à saúde dos dicentes do IFFar", 30),
                           ImageScreen("saude.png"),
-                          SubTitleList(
-                              "Política de atenção à saúde dos discentes do IFFar:",),
                           SizedBox(height: 16.0),
                           ItemList(
                               "Incorporar e implantar ações de prevenções de doenças, promoção e recuperação da saúde;",),
@@ -74,7 +72,7 @@ class _CheersState extends State<Cheers> {
         floatingActionButton: Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
-            LinkButton(""),
+            LinkButton("https://www.iffarroupilha.edu.br/assist%C3%AAncia-estudantil/apresentacao-ae"),
             SizedBox(
               width: 20,
             ),

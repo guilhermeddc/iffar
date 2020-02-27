@@ -3,7 +3,6 @@ import 'package:iffar/widgets/ImageScreen.dart';
 import 'package:iffar/widgets/ItemList.dart';
 import 'package:iffar/widgets/LinkButton.dart';
 import 'package:iffar/widgets/SubTitleList.dart';
-import 'package:iffar/widgets/TitleList.dart';
 import 'package:iffar/widgets/TitleScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_plugin_pdf_viewer/flutter_plugin_pdf_viewer.dart';
@@ -28,9 +27,9 @@ class _NutritionalState extends State<Nutritional> {
                 child: _isInit
                     ? ListView(
                         children: <Widget>[
+                          SizedBox(height: 20.0),
                           TitleScreen("Segurança alimentar e nutricional", 30),
                           ImageScreen("Burger.png"),
-                          TitleList("Segurança alimentar e nutricional"),
                           SubTitleList("Finalidades do programa:"),
                           ItemList(
                               "Garantir aos estudantes acesso aos refeitórios e à alimentação adequada no período em que estão na Instituição;"),
@@ -75,7 +74,7 @@ class _NutritionalState extends State<Nutritional> {
         floatingActionButton: Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
-            LinkButton(""),
+            LinkButton("https://www.iffarroupilha.edu.br/assist%C3%AAncia-estudantil/apresentacao-ae"),
             SizedBox(
               width: 20,
             ),

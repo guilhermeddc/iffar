@@ -34,7 +34,7 @@ class IntroButton extends StatelessWidget {
               text,
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: size.width /46,
+                fontSize: size.width /43,
               ),
             ),
           ],
@@ -50,8 +50,8 @@ class IntroButton extends StatelessWidget {
         },
         textColor: Colors.white70,
       ),
-      height: size.height / 7.5,
-      width: size.width / 4.5,
+      height: size.width / 4.3,
+      width: size.width / 4.3,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
         color: cor,

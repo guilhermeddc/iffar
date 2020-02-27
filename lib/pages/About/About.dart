@@ -41,7 +41,7 @@ class About extends StatelessWidget {
           ),
         ],
       ),
-      floatingActionButton: LinkButton("https://forms.gle/czvbhu3RZYHty1Zk8"),
+      floatingActionButton: LinkButton("https://forms.gle/LM5GEr7ERmsezKbPA"),
     );
   }
 
