@@ -150,7 +150,7 @@ class _HomePageState extends State<HomePage> {
                       IntroButton(
                         Colors.green,
                         Icons.link,
-                        "Links Uteis",
+                        "Editais",
                         10,
                         UsefulLinks(),
                       ),
