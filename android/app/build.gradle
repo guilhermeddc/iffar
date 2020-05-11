@@ -46,8 +46,8 @@ android {
         applicationId "br.com.iffar.cae_na_rede"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 3   // flutterVersionCode.toInteger()
-        versionName "1.6"  // flutterVersionName
+        versionCode 5   // flutterVersionCode.toInteger()
+        versionName "1.8"  // flutterVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 

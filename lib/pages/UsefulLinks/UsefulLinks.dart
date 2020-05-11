@@ -8,7 +8,7 @@ class UsefulLinks extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Links Uteis"),
+        title: Text("Editais"),
       ),
       body: Container(
         padding: EdgeInsets.all(8.0),
@@ -16,6 +16,34 @@ class UsefulLinks extends StatelessWidget {
           children: <Widget>[
             TitleScreen("EDITAIS DA ASSISTÊNCIA ESTUDANTIL", 30),
             TitleList("AUXÍLIOS DA ASSISTÊNCIA ESTUDANTIL"),
+            LinkList(
+              "https://www.iffarroupilha.edu.br/editais-sao-vicente-do-sul/item/17274-retifica%C3%A7%C3%A3o-rela%C3%A7%C3%A3o-de-estudantes-beneficiados-com-o-aux%C3%ADlio-inclus%C3%A3o-digital",
+              "Retificação - Relação de Estudantes Beneficiados com o Auxílio Inclusão Digital",
+            ),
+            LinkList(
+              "https://www.iffarroupilha.edu.br/editais-sao-vicente-do-sul/item/17273-resultado-final,-referente-ao-edital-n%C2%BA-044-2020,-de-17-de-abril-de-2020,-de-sele%C3%A7%C3%A3o-de-estudantes-a-serem-beneficiados-com-doa%C3%A7%C3%B5es-de-alimentos-produzidos-pelo-if-farroupilha-%E2%80%93-campus-s%C3%A3o-vicente-do-sul-e-adquiridos-atrav%C3%A9s-do-programa-nacional-de-alimen",
+              "Resultado final, referente ao edital nº 044/2020, de 17 de abril de 2020, de seleção de estudantes a serem beneficiados com doações de alimentos produzidos pelo IF Farroupilha – campus São Vicente do Sul e adquiridos através do Programa Nacional de Alimentos",
+            ),
+            LinkList(
+              "https://www.iffarroupilha.edu.br/editais-sao-vicente-do-sul/item/17264-rela%C3%A7%C3%A3o-dos-as-estudantes-beneficiados-com-aux%C3%ADlio-inclus%C3%A3o-digital,-de-acordo-com-resolu%C3%A7%C3%A3o-ad-referendum-n%C2%BA-003-2020-campus-svs",
+              "Relação dos(as) estudantes beneficiados com auxílio inclusão digital, de acordo com Resolução ad referendum nº 003/2020 - campus SVS",
+            ),
+            LinkList(
+              "https://www.iffarroupilha.edu.br/editais-sao-vicente-do-sul/item/17252-resultado-preliminar-referente-ao-edital-n044-2020-sele%C3%A7%C3%A3o-de-estudantes-a-serem-beneficiados-com-doa%C3%A7%C3%B5es-de-kits-de-alimentos",
+              "Resultado preliminar referente ao Edital nº 044/2020 - Seleção de estudantes a serem beneficiados com doações de kits de alimentos",
+            ),
+            LinkList(
+              "https://www.iffarroupilha.edu.br/editais-sao-vicente-do-sul/item/17209-edital-n%C2%BA-044-2020,-de-17-de-abril-de-2020-sele%C3%A7%C3%A3o-de-estudantes-a-serem-beneficiados-com-doa%C3%A7%C3%B5es-de-alimentos-produzidos-pelo-if-farroupilha-%E2%80%93-campus-s%C3%A3o-vicente-do-sul-e-adquiridos-atrav%C3%A9s-do-programa-nacional-de-alimenta%C3%A7%C3%A3o-escolar",
+              "Edital nº 044/2020, de 17 de abril de 2020 - Seleção de estudantes a serem beneficiados com doações de alimentos produzidos pelo IF Farroupilha – campus São Vicente do Sul e adquiridos através do Programa Nacional de Alimentação Escolar",
+            ),
+            LinkList(
+              "https://www.iffarroupilha.edu.br/editais-sao-vicente-do-sul/item/17111-lista-dos-as-estudantes-benefici%C3%A1rios-as-do-aux%C3%ADlio-financeiro-em-car%C3%A1ter-emergencial,-conforme-resolu%C3%A7%C3%A3o-ad-referendum-n%C2%BA-003-2020",
+              "Lista de Estudantes Beneficiários(as) do Auxílio Emergencial, conforme a Resolução Ad Referendum nº 003/2020 (REVISADA)",
+            ),
+            LinkList(
+              "https://www.iffarroupilha.edu.br/editais-sao-vicente-do-sul/item/16891-retifica%C3%A7%C3%A3o-referente-ao-edital-n%C2%BA-020-2020-concess%C3%A3o-de-aux%C3%ADlio-perman%C3%AAncia-da-assist%C3%AAncia-estudantil-do-iffar-2020",
+              "Retificação referente ao Edital nº 020/2020 - Concessão de Auxílio Permanência da Assistência Estudantil do IFFar/2020",
+            ),
             LinkList(
               "https://www.iffarroupilha.edu.br/editais-sao-vicente-do-sul/item/15548-chamadas-da-sele%C3%A7%C3%A3o-dos-estudantes-para-os-aux%C3%ADlios-da-assist%C3%AAncia-estudantil-perman%C3%AAncia-e-aux%C3%ADlio-transporte",
               "Edital nº 093/2020 - Chamadas da Seleção dos Estudantes para os Auxílios da Assistência Estudantil: Permanência e Auxílio Transporte",

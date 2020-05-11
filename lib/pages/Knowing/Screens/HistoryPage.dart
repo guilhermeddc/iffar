@@ -7,7 +7,6 @@ import 'package:iffar/widgets/TextHistory.dart';
 class HistoryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     var paragrafo01 = '''
     O Campus São Vicente do Sul do Instituto Federal Farroupilha, com sede no município de São Vicente do Sul, RS, foi criado em 17 de novembro de 1954, através de Termo de Acordo firmado entre a União e o então município de General Vargas, sob a denominação de Escola de Iniciação Agrícola, publicado no Diário Oficial de 30/11/1954, em conformidade com os Artigos 2º e 4º do Decreto Federal nº 22.470, de 20 e janeiro de 1947, que instalou o Ensino Agrícola no Brasil, e os dispositivos do Decreto Lei 9.613, de 20 de agosto de 1946.''';
 
@@ -58,20 +57,20 @@ class HistoryPage extends StatelessWidget {
                 child: PageView(
                   children: <Widget>[
                     CardScreen(
-                        'assets/images/1.png',
-                        'Escola de Iniciação Agrícola - 1954',
+                      'assets/images/1.png',
+                      'Escola de Iniciação Agrícola - 1954',
                     ),
                     CardScreen(
-                        'assets/images/2.png',
-                        'Colégio Agrícola - 1968',
+                      'assets/images/2.png',
+                      'Colégio Agrícola - 1968',
                     ),
                     CardScreen(
-                        'assets/images/4.png',
-                        'Escola Agrotécnica  Federal de São Vicente do Sul - 1985',
+                      'assets/images/4.png',
+                      'Escola Agrotécnica  Federal de São Vicente do Sul - 1985',
                     ),
                     CardScreen(
-                        'assets/images/3.png',
-                        'IFFar - 2009',
+                      'assets/images/3.png',
+                      'IFFar - 2009',
                     ),
                   ],
                 ),
@@ -87,6 +86,8 @@ class HistoryPage extends StatelessWidget {
             TextHistory(paragrafo07),
             TextHistory(paragrafo08),
             ImageScreen('anx02.png'),
+            TextHistory(
+                '*Fotos da Instituição - Unidade de Gestão de Documentos do Campus como unidade custodiadora.'),
           ],
         ),
       ),

@@ -16,7 +16,22 @@ class About extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           TitleScreen("“CAE na rede”", 30),
-          _textHistory("""     O aplicativo CAE na rede, tem como função facilitar o acesso às informações da assistência estudantil desenvolvidas no IFFar – campus São Vicente do Sul, no intuito de possibilitar a autonomia, a identificação, e o sentimento de pertencimento dos estudantes com a instituição."""),
+          _textHistory(
+              """     No IFFar campus São Vicente do Sul, as políticas de assistência estudantil desenvolvem-se de acordo com o Programa Nacional de Assistência Estudantil (PNAES), onde os seguintes aspectos devem ser contemplados:"""),
+          ItemList("Moradia estudantil;"),
+          ItemList("Segurança alimentar e nutricional;"),
+          ItemList("Auxílio financeiro aos estudantes; "),
+          ItemList("Atenção à Saúde; "),
+          ItemList("Promoção do esporte, cultura e lazer; "),
+          ItemList("Apoio didático-pedagógico; "),
+          ItemList(
+              "Acesso, participação e aprendizagem de estudantes com deficiência, transtornos globais do desenvolvimento e altas habilidades e superdotação."),
+          _textHistory(
+              """     As políticas de assistência estudantil, enquanto mecanismo de direito social, devem prover as condições necessárias para que o aluno possa se desenvolver integralmente, promovendo a inclusão social, a produção de conhecimento, o acompanhamento pedagógico, condições adequadas para os estudos sempre levando em consideração a qualidade de vida dos estudantes."""),
+          _textHistory(
+              """     Sendo assim, as políticas de assistência estudantil, além de disponibilizar recursos financeiros, elas também desenvolvem ações pensando na formação integral dos alunos, onde possam ter a atenção à saúde, o acompanhamento pedagógico, a cultura, o esporte e lazer contemplados, com a finalidade de possibilitar a democratização do ensino e reduzir as desigualdades sociais, onde os alunos possam ingressar, permanecer na instituição e obter êxito nos estudos."""),
+          _textHistory(
+              """     Nesse sentido, o aplicativo CAE na rede, tem como função facilitar o acesso às informações da assistência estudantil desenvolvidas no IFFar campus São Vicente do Sul, com o objetivo de possibilitar mais autonomia na busca dessas informações e fortalecer o sentimento de pertencimento com a instituição."""),
           TitleList("Idealizadora"),
           ItemList("Jaqueline Dutra de Oliveira"),
           ItemList("Mestranda em Educação Profissional e Tecnológica"),
@@ -35,7 +50,10 @@ class About extends StatelessWidget {
             height: 20,
           ),
           TitleScreen("De sua opnião sobre o Aplicativo:", 30),
-          Icon(Icons.arrow_forward, color: Colors.green,),
+          Icon(
+            Icons.arrow_forward,
+            color: Colors.green,
+          ),
           SizedBox(
             height: 20,
           ),
